@@ -1,0 +1,87 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/contact/contact_list.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/mail/folder/mail_folder.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/nav/side/stack_panel.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/task/task_list.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SidePanel",
+        "7": [
+          {
+            "2": "ContactList"
+          },
+          {
+            "2": "MailFolder"
+          },
+          {
+            "2": "StackPanel"
+          },
+          {
+            "2": "TaskList"
+          }
+        ]
+      }
+    ],
+    "6": "side_panel.dart"
+  },
+  "type": {
+    "SidePanel": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "side-panel",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SidePanel",
+        "moduleUrl": "asset:gwt_mail_sample/lib/nav/side/side_panel.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<stack-panel iconUrl=\"packages/gwt_mail_sample/nav/side/mailboxesgroup.png\"\n             title=\"Mailboxes\"\n             [isOpen]=\"selectedPanel == 'mailboxes'\"\n             (open)=\"selectedPanel = 'mailboxes'\">\n  <div>\n    <mail-folder></mail-folder>\n  </div>\n</stack-panel>\n\n<stack-panel iconUrl=\"packages/gwt_mail_sample/nav/side/tasksgroup.png\"\n             title=\"Tasks\"\n             [isOpen]=\"selectedPanel == 'tasks'\"\n             (open)=\"selectedPanel = 'tasks'\">\n  <div>\n    <task-list></task-list>\n  </div>\n</stack-panel>\n\n<stack-panel iconUrl=\"packages/gwt_mail_sample/nav/side/contactsgroup.png\"\n             title=\"Contacts\"\n             [isOpen]=\"selectedPanel == 'contacts'\"\n             (open)=\"selectedPanel = 'contacts'\">\n  <div>\n    <contact-list></contact-list>\n  </div>\n</stack-panel>\n",
+        "templateUrl": "asset:gwt_mail_sample/lib/nav/side/side_panel.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:gwt_mail_sample/lib/nav/side/side_panel.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

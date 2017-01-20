@@ -1,0 +1,26 @@
+<stack-panel iconUrl="packages/gwt_mail_sample/nav/side/mailboxesgroup.png"
+             title="Mailboxes"
+             [isOpen]="selectedPanel == 'mailboxes'"
+             (open)="selectedPanel = 'mailboxes'">
+  <div>
+    <mail-folder></mail-folder>
+  </div>
+</stack-panel>
+
+<stack-panel iconUrl="packages/gwt_mail_sample/nav/side/tasksgroup.png"
+             title="Tasks"
+             [isOpen]="selectedPanel == 'tasks'"
+             (open)="selectedPanel = 'tasks'">
+  <div>
+    <task-list></task-list>
+  </div>
+</stack-panel>
+
+<stack-panel iconUrl="packages/gwt_mail_sample/nav/side/contactsgroup.png"
+             title="Contacts"
+             [isOpen]="selectedPanel == 'contacts'"
+             (open)="selectedPanel = 'contacts'">
+  <div>
+    <contact-list></contact-list>
+  </div>
+</stack-panel>

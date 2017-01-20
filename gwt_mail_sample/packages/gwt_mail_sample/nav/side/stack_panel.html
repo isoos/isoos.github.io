@@ -1,0 +1,9 @@
+<div class="header" (click)="headerClick()">
+  <div *ngIf="iconUrl != null">
+    <img [src]="iconUrl" />
+  </div>
+  <span>{{title}}</span>
+</div>
+<div class="content" *ngIf="isOpen">
+  <ng-content></ng-content>
+</div>

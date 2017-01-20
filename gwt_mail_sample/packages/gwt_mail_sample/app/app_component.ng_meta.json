@@ -1,0 +1,109 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/nav/top/top_panel.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/nav/side/side_panel.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/mail/detail/mail_detail.dart",
+        "5": false
+      },
+      {
+        "1": "package:gwt_mail_sample/mail/list/mail_list.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "7": [
+          {
+            "2": "MailDetail"
+          },
+          {
+            "2": "MailList"
+          },
+          {
+            "2": "TopPanel"
+          },
+          {
+            "2": "SidePanel"
+          }
+        ]
+      }
+    ],
+    "6": "app_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:gwt_mail_sample/nav/top/top_panel.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:gwt_mail_sample/nav/side/side_panel.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:gwt_mail_sample/mail/detail/mail_detail.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "package:gwt_mail_sample/mail/list/mail_list.template.dart",
+        "4": "i4"
+      }
+    ]
+  },
+  "type": {
+    "AppComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "AppComponent",
+        "moduleUrl": "asset:gwt_mail_sample/lib/app/app_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<top-panel></top-panel>\n<side-panel></side-panel>\n<div class=\"right-side\">\n  <mail-list></mail-list>\n  <mail-detail></mail-detail>\n</div>\n",
+        "templateUrl": "asset:gwt_mail_sample/lib/app/app_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:gwt_mail_sample/lib/app/app_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
