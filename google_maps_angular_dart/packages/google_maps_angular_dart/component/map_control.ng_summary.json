@@ -1,0 +1,84 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:math",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:google_maps/google_maps.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MapControl",
+        "6": [
+          "AfterViewInit"
+        ]
+      }
+    ],
+    "6": "map_control.dart"
+  },
+  "type": {
+    "MapControl": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "map-control",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MapControl",
+        "moduleUrl": "asset:google_maps_angular_dart/lib/component/map_control.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        6
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<table>\n  <tr valign=\"top\">\n    <td>\n      <div class=\"map-area\" #mapArea>[map]</div>\n    </td>\n    <td>\n      <div *ngIf=\"showA\">A: {{aPosition}}</div>\n      <div *ngIf=\"showB\">B: {{bPosition}}</div>\n      <p>\n        <label>Unit:</label>\n        <select [(ngModel)]=\"unit\">\n          <option value=\"km\">km</option>\n          <option value=\"miles\">miles</option>\n        </select>\n      </p>\n      <p *ngIf=\"showDistance\">\n        Distance: {{distance}}<br/>\n      </p>\n    </td>\n  </tr>\n</table>\n",
+        "templateUrl": "asset:google_maps_angular_dart/lib/component/map_control.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:google_maps_angular_dart/lib/component/map_control.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "mapArea",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "mapAreaRef",
+          "read": null
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

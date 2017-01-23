@@ -11,7 +11,11 @@
         "5": false
       },
       {
-        "1": "package:angular2_components/angular2_components.dart",
+        "1": "package:angular2_components/src/components/material_popup/material_popup.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2_components/src/laminate/popup/popup.dart",
         "5": false
       }
     ],
@@ -20,7 +24,7 @@
         "1": "ContactList",
         "7": [
           {
-            "2": "materialDirectives"
+            "2": "MaterialPopupComponent"
           }
         ]
       }
@@ -66,7 +70,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<div class=\"contacts\">\n  <div *ngFor=\"let item of items\">\n    <a href=\"\" (click)=\"showPopup($event, item)\">{{item.name}}</a>\n  </div>\n</div>\n\n<material-popup\n    *ngIf=\"popupVisible\"\n    [source]=\"popupSource\"\n    [(visible)]=\"popupVisible\">\n  <div class=\"popup\">\n    <img [src]=\"selected.photoUrl\" class=\"photo\"/>\n    <div class=\"right\">\n      <div>{{selected.name}}</div>\n      <div class=\"email\">{{selected.email}}</div>\n    </div>\n  </div>\n</material-popup>\n",
+        "template": "<div class=\"contacts\">\n  <div *ngFor=\"let item of items\" class=\"item\" (click)=\"showPopup($event, item)\">{{item.name}}</div>\n</div>\n\n<material-popup\n    *ngIf=\"popupVisible\"\n    [source]=\"popupSource\"\n    [(visible)]=\"popupVisible\">\n  <div class=\"popup\">\n    <img [src]=\"selected.photoUrl\" class=\"photo\"/>\n    <div class=\"right\">\n      <div>{{selected.name}}</div>\n      <div class=\"email\">{{selected.email}}</div>\n    </div>\n  </div>\n</material-popup>\n",
         "templateUrl": "asset:gwt_mail_sample/lib/contact/contact_list.html",
         "styles": [],
         "styleUrls": [
@@ -74,15 +78,7 @@
         ],
         "ngContentSelectors": []
       },
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "materialProviders",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
-      ],
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

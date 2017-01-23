@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2_components/angular2_components.dart",
+        "1": "package:angular2_components/src/components/material_ripple/material_ripple.dart",
         "5": false
       },
       {
@@ -30,10 +30,10 @@
         ],
         "7": [
           {
-            "2": "materialDirectives"
+            "2": "MailNavBar"
           },
           {
-            "2": "MailNavBar"
+            "2": "MaterialRippleComponent"
           }
         ]
       }
@@ -77,8 +77,12 @@
         ]
       },
       "changeDetection": 6,
-      "inputs": {},
-      "inputTypes": {},
+      "inputs": {
+        "height": "height"
+      },
+      "inputTypes": {
+        "height": " int"
+      },
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},
@@ -86,7 +90,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<div class=\"table\">\n  <div class=\"header\">\n    <div class=\"row\">\n      <div class=\"col sender\">Sender</div>\n      <div class=\"col email\">Email</div>\n      <div class=\"col subject\">\n        Subject\n      </div>\n      <mail-nav-bar></mail-nav-bar>\n    </div>\n  </div>\n  <div class=\"content\">\n    <div *ngFor=\"let item of items\"\n         class=\"row\"\n         (click)=\"selectRow(item)\"\n         [class.selected]=\"isSelectedRow(item)\">\n      <div class=\"col sender\">{{item.sender}}</div>\n      <div class=\"col email\">{{item.email}}</div>\n      <div class=\"col subject\">{{item.subject}}</div>\n    </div>\n  </div>\n</div>\n",
+        "template": "<div class=\"table\">\n  <div class=\"header\">\n    <div class=\"row\">\n      <div class=\"col sender\">Sender</div>\n      <div class=\"col email\">Email</div>\n      <div class=\"col subject\">\n        Subject\n      </div>\n      <mail-nav-bar></mail-nav-bar>\n    </div>\n  </div>\n  <div class=\"content\" [style.height.px]=\"height\">\n    <div *ngFor=\"let item of items\"\n         class=\"row\"\n         (click)=\"selectRow(item)\"\n         [class.selected]=\"isSelectedRow(item)\">\n      <div class=\"col sender\">{{item.sender}}</div>\n      <div class=\"col email\">{{item.email}}</div>\n      <div class=\"col subject\">{{item.subject}}</div>\n      <material-ripple></material-ripple>\n    </div>\n  </div>\n</div>\n",
         "templateUrl": "asset:gwt_mail_sample/lib/mail/list/mail_list.html",
         "styles": [],
         "styleUrls": [
@@ -94,15 +98,7 @@
         ],
         "ngContentSelectors": []
       },
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "materialProviders",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
-      ],
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

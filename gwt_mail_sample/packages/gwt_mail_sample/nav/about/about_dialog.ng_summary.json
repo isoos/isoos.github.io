@@ -7,7 +7,15 @@
         "5": false
       },
       {
-        "1": "package:angular2_components/angular2_components.dart",
+        "1": "package:angular2_components/src/components/material_button/material_button.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2_components/src/components/material_dialog/material_dialog.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2_components/src/laminate/components/modal/modal.dart",
         "5": false
       }
     ],
@@ -16,7 +24,13 @@
         "1": "AboutDialog",
         "7": [
           {
-            "2": "materialDirectives"
+            "2": "MaterialButtonComponent"
+          },
+          {
+            "2": "MaterialDialogComponent"
+          },
+          {
+            "2": "ModalComponent"
           }
         ]
       }
@@ -50,7 +64,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<modal *ngIf=\"visible\" [(visible)]=\"visible\">\n  <material-dialog headered\n                   class=\"headered-dialog\"\n                   [autoDismissable]=\"visible\"\n                   (dismiss)=\"visible = false\">\n    <div header>\n      <h3>About the Mail Sample</h3>\n    </div>\n    <img src=\"packages/gwt_mail_sample/nav/about/gwt-logo.png\" class=\"logo\"/>\n    <p>\n      This sample application demonstrates the construction of a complex user\n      interface using Angular and Google's material components. <br/>\n      Have a look at the code to see how easy it is to build your own apps!\n    </p>\n    <div footer>\n      <material-button autoFocus\n                       clear-size\n                       (trigger)=\"visible = false\"\n                       class=\"white\">\n        Close\n      </material-button>\n    </div>\n  </material-dialog>\n</modal>\n",
+        "template": "<modal *ngIf=\"visible\" [(visible)]=\"visible\">\n  <material-dialog class=\"headered-dialog\"\n                   [autoDismissable]=\"visible\"\n                   (dismiss)=\"visible = false\">\n    <div header>\n      <h3>About the Mail Sample</h3>\n    </div>\n    <img src=\"packages/gwt_mail_sample/nav/top/dart-logo-60.png\" class=\"logo\"/>\n    <p>\n      This sample application demonstrates the construction of a complex user\n      interface using Angular and Google's material components. <br/>\n      Have a look at the code to see how easy it is to build your own apps!\n    </p>\n    <div footer>\n      <material-button autoFocus\n                       clear-size\n                       (trigger)=\"visible = false\"\n                       class=\"white\">\n        Close\n      </material-button>\n    </div>\n  </material-dialog>\n</modal>\n",
         "templateUrl": "asset:gwt_mail_sample/lib/nav/about/about_dialog.html",
         "styles": [],
         "styleUrls": [
@@ -58,15 +72,7 @@
         ],
         "ngContentSelectors": []
       },
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "materialProviders",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
-      ],
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

@@ -70,6 +70,13 @@
       "prefix": null,
       "value": null
     },
+    "opacityLightest": {
+      "class": "Identifier",
+      "name": "opacityLightest",
+      "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
+      "prefix": null,
+      "value": null
+    },
     "darkOpacityStrong": {
       "class": "Identifier",
       "name": "darkOpacityStrong",
@@ -87,6 +94,20 @@
     "darkOpacityLighter": {
       "class": "Identifier",
       "name": "darkOpacityLighter",
+      "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
+      "prefix": null,
+      "value": null
+    },
+    "darkOpacityLightest": {
+      "class": "Identifier",
+      "name": "darkOpacityLightest",
+      "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
+      "prefix": null,
+      "value": null
+    },
+    "rippleOpacity": {
+      "class": "Identifier",
+      "name": "rippleOpacity",
       "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
       "prefix": null,
       "value": null
@@ -136,6 +157,20 @@
     "lighterTransparentWhite": {
       "class": "Identifier",
       "name": "lighterTransparentWhite",
+      "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
+      "prefix": null,
+      "value": null
+    },
+    "lightestTransparentBlack": {
+      "class": "Identifier",
+      "name": "lightestTransparentBlack",
+      "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
+      "prefix": null,
+      "value": null
+    },
+    "lightestTransparentWhite": {
+      "class": "Identifier",
+      "name": "lightestTransparentWhite",
       "moduleUrl": "asset:angular2_components/lib/src/utils/color/material.dart",
       "prefix": null,
       "value": null

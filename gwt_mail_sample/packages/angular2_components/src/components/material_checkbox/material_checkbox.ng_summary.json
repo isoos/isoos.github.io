@@ -265,7 +265,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"icon-container\">\n  <glyph [style.color]=\"themeColor\"\n         [icon]=\"icon\"\n         class=\"icon\"\n         aria-hidden=\"true\"\n         [class.filled]=\"checked || indeterminate\">\n  </glyph>\n  <material-ripple [style.color]=\"rippleColor\"\n                   *ngIf=\"!disabled\"\n                   [focused]=\"showFocus\"\n                   [class.filled]=\"checked\"\n                   class=\"ripple\">\n  </material-ripple>\n</div>\n<div class=\"content\">\n  {{label}}\n  <ng-content></ng-content>\n</div>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"icon-container\"\n     [class.focus]=\"showFocus\">\n  <glyph [style.color]=\"themeColor\"\n         [icon]=\"icon\"\n         class=\"icon\"\n         aria-hidden=\"true\"\n         [class.filled]=\"checked || indeterminate\">\n  </glyph>\n  <material-ripple [style.color]=\"rippleColor\"\n              *ngIf=\"!disabled\"\n              class=\"ripple\">\n  </material-ripple>\n</div>\n<div class=\"content\">\n  {{label}}\n  <ng-content></ng-content>\n</div>\n",
         "templateUrl": "asset:angular2_components/lib/src/components/material_checkbox/material_checkbox.html",
         "styles": [],
         "styleUrls": [

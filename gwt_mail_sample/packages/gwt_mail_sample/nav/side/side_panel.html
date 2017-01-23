@@ -1,26 +1,40 @@
-<stack-panel iconUrl="packages/gwt_mail_sample/nav/side/mailboxesgroup.png"
-             title="Mailboxes"
-             [isOpen]="selectedPanel == 'mailboxes'"
-             (open)="selectedPanel = 'mailboxes'">
-  <div>
+<material-expansionpanel
+    flat
+    [showSaveCancel]="false"
+    [expanded]="selectedPanel == 'mailboxes'"
+    (open)="open('mailboxes')">
+  <div name class="header">
+    <div><glyph icon="mail_outline"></glyph></div>
+    <div>Mailboxes</div>
+  </div>
+  <div class="content" [style.height.px]="heightPx">
     <mail-folder></mail-folder>
   </div>
-</stack-panel>
-
-<stack-panel iconUrl="packages/gwt_mail_sample/nav/side/tasksgroup.png"
-             title="Tasks"
-             [isOpen]="selectedPanel == 'tasks'"
-             (open)="selectedPanel = 'tasks'">
-  <div>
+</material-expansionpanel>
+<material-expansionpanel
+    flat
+    [showSaveCancel]="false"
+    [expanded]="selectedPanel == 'tasks'"
+    (open)="open('tasks')">
+  <div name class="header">
+    <div><glyph icon="view_list"></glyph></div>
+    <div>Tasks</div>
+  </div>
+  <div class="content" [style.height.px]="heightPx">
     <task-list></task-list>
   </div>
-</stack-panel>
-
-<stack-panel iconUrl="packages/gwt_mail_sample/nav/side/contactsgroup.png"
-             title="Contacts"
-             [isOpen]="selectedPanel == 'contacts'"
-             (open)="selectedPanel = 'contacts'">
-  <div>
+</material-expansionpanel>
+<material-expansionpanel
+    flat
+    [showSaveCancel]="false"
+    [expanded]="selectedPanel == 'contacts'"
+    (open)="open('contacts')">
+  <div name class="header">
+    <div><glyph icon="contact_mail"></glyph></div>
+    <div>Contacts</div>
+  </div>
+  <div class="content" [style.height.px]="heightPx">
     <contact-list></contact-list>
   </div>
-</stack-panel>
+</material-expansionpanel>
+<div #bottom></div>

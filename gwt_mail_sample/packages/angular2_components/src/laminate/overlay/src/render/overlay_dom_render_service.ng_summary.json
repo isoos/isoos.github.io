@@ -11,6 +11,10 @@
         "5": false
       },
       {
+        "1": "../../../enums/visibility.dart",
+        "5": false
+      },
+      {
         "1": "package:angular2/angular2.dart",
         "5": false
       },

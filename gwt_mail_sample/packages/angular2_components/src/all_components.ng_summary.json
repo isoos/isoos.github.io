@@ -90,6 +90,15 @@
         "1": "components/material_input/material_input_multiline.dart"
       },
       {
+        "1": "components/material_list/material_list.dart"
+      },
+      {
+        "1": "components/material_list/material_list_item.dart"
+      },
+      {
+        "1": "components/material_list/material_list_size.dart"
+      },
+      {
         "1": "components/material_popup/material_popup.dart"
       },
       {
@@ -103,9 +112,6 @@
       },
       {
         "1": "components/material_ripple/material_ripple.dart"
-      },
-      {
-        "1": "components/material_ripple/module.dart"
       },
       {
         "1": "components/material_spinner/material_spinner.dart"
@@ -124,6 +130,12 @@
       },
       {
         "1": "components/material_toggle/material_toggle.dart"
+      },
+      {
+        "1": "components/material_tooltip/material_tooltip.dart"
+      },
+      {
+        "1": "components/material_tooltip/module.dart"
       },
       {
         "1": "components/material_yes_no_buttons/material_yes_no_buttons.dart"
@@ -163,6 +175,9 @@
       },
       {
         "1": "laminate/popup/popup.dart"
+      },
+      {
+        "1": "model/selection/selection_model.dart"
       }
     ],
     "6": "all_components.dart"

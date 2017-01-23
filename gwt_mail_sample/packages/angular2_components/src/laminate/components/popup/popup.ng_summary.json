@@ -95,6 +95,14 @@
               "const Inject(rtlToken)"
             ],
             "4": "rtl"
+          },
+          {
+            "1": "ChangeDetectorRef",
+            "4": "_changeDetector"
+          },
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
           }
         ],
         "6": [
@@ -270,6 +278,46 @@
             "isHost": false,
             "isSkipSelf": false,
             "isOptional": true,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
             "isValue": false
           }
         ]

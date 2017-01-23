@@ -122,7 +122,11 @@
           },
           {
             "1": "ChangeDetectorRef",
-            "4": "_changeDetector"
+            "4": "changeDetector"
+          },
+          {
+            "1": "ElementRef",
+            "4": "elementRef"
           }
         ],
         "6": [
@@ -348,6 +352,26 @@
             "isSkipSelf": false,
             "isOptional": false,
             "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
@@ -367,11 +391,13 @@
         "trackLayoutChanges": "trackLayoutChanges",
         "visible": "visible",
         "z": "z",
+        "popupSizeProvider": "popupSizeProvider",
         "inkBackground": "ink",
         "hasBox": "hasBox",
         "shadowCssClass": "shadowCssClass"
       },
       "inputTypes": {
+        "popupSizeProvider": " PopupSizeProvider",
         "shadowCssClass": " String"
       },
       "outputs": {

@@ -88,6 +88,13 @@
       "prefix": null,
       "value": null
     },
+    "closestWithClass": {
+      "class": "Identifier",
+      "name": "closestWithClass",
+      "moduleUrl": "asset:angular2_components/lib/src/utils/browser/events/events.dart",
+      "prefix": null,
+      "value": null
+    },
     "isParentOf": {
       "class": "Identifier",
       "name": "isParentOf",

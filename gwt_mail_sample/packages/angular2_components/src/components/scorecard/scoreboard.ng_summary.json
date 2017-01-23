@@ -178,7 +178,8 @@
       "inputs": {
         "type": "type",
         "scrollable": "scrollable",
-        "resetOnCardChanges": "resetOnCardChanges"
+        "resetOnCardChanges": "resetOnCardChanges",
+        "isVertical": "isVertical"
       },
       "inputTypes": {
         "type": " ScoreboardType"
@@ -193,7 +194,7 @@
       ],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"acx-scoreboard\">\n  <material-button class=\"scroll-button scroll-left-button\"\n                   (trigger)=\"scrollScorecardBarLeft()\"\n                   [class.hide]=\"atScorecardBarStart\"\n                   *ngIf=\"isScrollable\">\n    <glyph class=\"scroll-icon\"\n           icon=\"chevron_left\"\n           [attr.aria-label]=\"scrollScorecardBarBack\">\n    </glyph>\n  </material-button>\n  <div scorecardBar class=\"scorecard-bar\">\n    <ng-content></ng-content>\n  </div>\n  <material-button class=\"scroll-button scroll-right-button\"\n                   (trigger)=\"scrollScorecardBarRight()\"\n                   [class.hide]=\"atScorecardBarEnd\"\n                   *ngIf=\"isScrollable\">\n    <glyph class=\"scroll-icon\"\n           icon=\"chevron_right\"\n           [attr.aria-label]=\"scrollScorecardBarForward\">\n    </glyph>\n  </material-button>\n</div>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"acx-scoreboard\"\n     [class.acx-scoreboard-horizontal]=\"!isVertical\"\n     [class.acx-scoreboard-vertical]=\"isVertical\">\n  <material-button class=\"scroll-button scroll-back-button\"\n                   (trigger)=\"scrollBack()\"\n                   [class.hide]=\"atScorecardBarStart\"\n                   *ngIf=\"isScrollable\">\n    <glyph [icon]=\"backIconType\"\n           [attr.aria-label]=\"scrollScorecardBarBack\">\n    </glyph>\n  </material-button>\n  <div scorecardBar class=\"scorecard-bar\" [isVertical]=\"isVertical\">\n    <ng-content></ng-content>\n  </div>\n  <material-button class=\"scroll-button scroll-forward-button\"\n                   (trigger)=\"scrollForward()\"\n                   [class.hide]=\"atScorecardBarEnd\"\n                   *ngIf=\"isScrollable\">\n    <glyph [icon]=\"forwardIconType\"\n           [attr.aria-label]=\"scrollScorecardBarForward\">\n    </glyph>\n  </material-button>\n</div>\n",
         "templateUrl": "asset:angular2_components/lib/src/components/scorecard/scoreboard.html",
         "styles": [],
         "styleUrls": [

@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2_components/angular2_components.dart",
+        "1": "package:angular2_components/src/components/material_checkbox/material_checkbox.dart",
         "5": false
       }
     ],
@@ -16,7 +16,7 @@
         "1": "TaskList",
         "7": [
           {
-            "2": "materialDirectives"
+            "2": "MaterialCheckboxComponent"
           }
         ]
       }
@@ -61,15 +61,7 @@
         "styleUrls": [],
         "ngContentSelectors": []
       },
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "materialProviders",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
-      ],
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

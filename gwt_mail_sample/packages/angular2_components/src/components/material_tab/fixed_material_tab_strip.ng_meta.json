@@ -177,7 +177,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"navi-bar\"\n     focusList>\n  <div class=\"tab-indicator\"\n       [style.transform]=\"tabIndicatorTransform\">\n  </div>\n  <tab-button *ngFor=\"let tabLabel of tabLabels; let idx = index\"\n              (trigger)=\"switchTo(idx)\"\n              [id]=\"tabId(idx)\"\n              class=\"tab-button\"\n              [class.active]=\"activeTabIndex == idx\"\n              [attr.aria-selected]=\"activeStr(idx)\"\n              [label]=\"tabLabel\"\n              focusItem>\n  </tab-button>\n</div>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"navi-bar\"\n     focusList>\n  <div class=\"tab-indicator\"\n       [style.transform]=\"tabIndicatorTransform\">\n  </div>\n  <tab-button *ngFor=\"let tabLabel of tabLabels; let idx = index\"\n              (trigger)=\"switchTo(idx)\"\n              [id]=\"tabId(idx)\"\n              class=\"tab-button\"\n              [active]=\"activeTabIndex == idx\"\n              [attr.aria-selected]=\"activeStr(idx)\"\n              [label]=\"tabLabel\"\n              focusItem>\n  </tab-button>\n</div>\n",
         "templateUrl": "asset:angular2_components/lib/src/components/material_tab/fixed_material_tab_strip.html",
         "styles": [],
         "styleUrls": [

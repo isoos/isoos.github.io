@@ -1,5 +1,17 @@
-:host {
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-bottom: 1px solid #999;
+:host-context header {
+  background-color: #eee;
+}
+
+.content {
+  margin: 8px 0px;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header glyph {
+  margin-right: 6px;
 }

@@ -115,7 +115,9 @@
         ]
       },
       "changeDetection": 6,
-      "inputs": {},
+      "inputs": {
+        "isVertical": "isVertical"
+      },
       "inputTypes": {},
       "outputs": {},
       "hostListeners": {},

@@ -97,9 +97,12 @@
       },
       "changeDetection": 6,
       "inputs": {
-        "label": "label"
+        "label": "label",
+        "isActive": "active"
       },
-      "inputTypes": {},
+      "inputTypes": {
+        "isActive": " bool"
+      },
       "outputs": {
         "trigger": "trigger"
       },
@@ -114,6 +117,8 @@
       "hostProperties": {
         "attr.tabindex": "tabIndex",
         "class.is-disabled": "disabled",
+        "class.focus": "visualFocus",
+        "class.active": "isActive || isMouseDown",
         "attr.aria-disabled": "disabledStr"
       },
       "hostAttributes": {
@@ -122,7 +127,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "          <div class=\"content\">\n            {{label}}\n          </div>\n          <material-ripple (mousedown)=\"onMouseDown($event)\"\n                           (mouseup)=\"onMouseUp($event)\"\n                           [focused]=\"visualFocus\">\n          </material-ripple>\n        ",
+        "template": "          <div class=\"content\">\n            {{label}}\n          </div>\n          <material-ripple></material-ripple>\n        ",
         "templateUrl": "asset:angular2_components/lib/src/components/material_tab/src/tab_button.dart",
         "styles": [],
         "styleUrls": [

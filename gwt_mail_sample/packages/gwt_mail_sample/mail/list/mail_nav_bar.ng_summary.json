@@ -14,7 +14,7 @@
         "5": false
       },
       {
-        "1": "package:angular2_components/angular2_components.dart",
+        "1": "package:angular2_components/src/components/material_button/material_button.dart",
         "5": false
       },
       {
@@ -33,7 +33,7 @@
         ],
         "7": [
           {
-            "2": "materialDirectives"
+            "2": "MaterialButtonComponent"
           }
         ]
       }
@@ -86,7 +86,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<material-button dense *ngIf=\"hasNewer\" (click)=\"newer()\">&lt; newer</material-button>\n{{start}}-{{end}} of {{total}}\n<material-button dense [disabled]=\"!hasOlder\" (click)=\"older()\">older &gt;</material-button>\n",
+        "template": "<material-button dense [disabled]=\"!hasNewer\" (click)=\"newer()\">&lt; newer</material-button>\n{{start}}-{{end}} of {{total}}\n<material-button dense [disabled]=\"!hasOlder\" (click)=\"older()\">older &gt;</material-button>\n",
         "templateUrl": "asset:gwt_mail_sample/lib/mail/list/mail_nav_bar.html",
         "styles": [],
         "styleUrls": [
@@ -94,15 +94,7 @@
         ],
         "ngContentSelectors": []
       },
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "materialProviders",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
-      ],
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

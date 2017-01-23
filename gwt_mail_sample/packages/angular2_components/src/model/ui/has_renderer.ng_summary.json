@@ -15,6 +15,13 @@
       "prefix": null,
       "value": null
     },
+    "nullRenderer": {
+      "class": "Identifier",
+      "name": "nullRenderer",
+      "moduleUrl": "asset:angular2_components/lib/src/model/ui/has_renderer.dart",
+      "prefix": null,
+      "value": null
+    },
     "HasRenderer": {
       "class": "Identifier",
       "name": "HasRenderer",
@@ -46,6 +53,13 @@
     "defaultItemRenderer": {
       "class": "Identifier",
       "name": "defaultItemRenderer",
+      "moduleUrl": "asset:angular2_components/lib/src/model/ui/has_renderer.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_nullRenderer": {
+      "class": "Identifier",
+      "name": "_nullRenderer",
       "moduleUrl": "asset:angular2_components/lib/src/model/ui/has_renderer.dart",
       "prefix": null,
       "value": null

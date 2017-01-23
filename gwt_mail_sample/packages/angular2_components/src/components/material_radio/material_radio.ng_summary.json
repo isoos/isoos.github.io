@@ -263,7 +263,7 @@
       ],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"icon-container\">\n  <glyph [icon]=\"icon\"\n         size=\"large\"\n         class=\"icon\"\n         aria-hidden=\"true\"\n         [class.checked]=\"checked\">\n  </glyph>\n  <material-ripple *ngIf=\"!disabled\"\n                   [focused]=\"showFocus\"\n                   [class.checked]=\"checked\"\n                   class=\"ripple\">\n  </material-ripple>\n</div>\n<div class=\"content\">\n  <ng-content></ng-content>\n</div>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"icon-container\"\n     [class.focus]=\"showFocus\"\n     [class.checked]=\"checked\"\n     [class.disabled]=\"disabled\">\n  <glyph [icon]=\"icon\"\n         class=\"icon\"\n         aria-hidden=\"true\">\n  </glyph>\n  <material-ripple *ngIf=\"!disabled\" class=\"ripple\">\n  </material-ripple>\n</div>\n<div class=\"content\">\n  <ng-content></ng-content>\n</div>\n",
         "templateUrl": "asset:angular2_components/lib/src/components/material_radio/material_radio.html",
         "styles": [],
         "styleUrls": [

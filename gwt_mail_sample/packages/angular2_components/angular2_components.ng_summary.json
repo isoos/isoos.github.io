@@ -51,6 +51,20 @@
         },
         {
           "class": "Identifier",
+          "name": "ClickableTooltipTargetDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "DarkThemeDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
           "name": "DeferredContentDirective",
           "moduleUrl": null,
           "prefix": null,
@@ -163,6 +177,20 @@
         },
         {
           "class": "Identifier",
+          "name": "MaterialIconTooltipComponent",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialInkTooltipComponent",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
           "name": "MaterialInputComponent",
           "moduleUrl": null,
           "prefix": null,
@@ -171,6 +199,34 @@
         {
           "class": "Identifier",
           "name": "MaterialInputDefaultValueAccessor",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialListComponent",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialListItemComponent",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialMultilineInputComponent",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialPaperTooltipComponent",
           "moduleUrl": null,
           "prefix": null,
           "value": null
@@ -240,14 +296,28 @@
         },
         {
           "class": "Identifier",
-          "name": "MaterialYesNoButtonsComponent",
+          "name": "MaterialTooltipDirective",
           "moduleUrl": null,
           "prefix": null,
           "value": null
         },
         {
           "class": "Identifier",
-          "name": "MaterialMultilineInputComponent",
+          "name": "MaterialTooltipSourceDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialTooltipTargetDirective",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "MaterialYesNoButtonsComponent",
           "moduleUrl": null,
           "prefix": null,
           "value": null
@@ -308,13 +378,6 @@
           "moduleUrl": null,
           "prefix": null,
           "value": null
-        },
-        {
-          "class": "Identifier",
-          "name": "rippleBindings",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
         }
       ]
     }
@@ -324,6 +387,8 @@
       "AutoDismissDirective",
       "AutoFocusDirective",
       "CachingDeferredContentDirective",
+      "ClickableTooltipTargetDirective",
+      "DarkThemeDirective",
       "DeferredContentDirective",
       "FixedMaterialTabStripComponent",
       "FocusActivableItemDirective",
@@ -340,8 +405,14 @@
       "MaterialExpansionPanel",
       "MaterialExpansionPanelSet",
       "MaterialFabComponent",
+      "MaterialIconTooltipComponent",
+      "MaterialInkTooltipComponent",
       "MaterialInputComponent",
       "MaterialInputDefaultValueAccessor",
+      "MaterialListComponent",
+      "MaterialListItemComponent",
+      "MaterialMultilineInputComponent",
+      "MaterialPaperTooltipComponent",
       "MaterialPopupComponent",
       "MaterialProgressComponent",
       "MaterialRadioComponent",
@@ -351,8 +422,10 @@
       "MaterialTabComponent",
       "MaterialTabPanelComponent",
       "MaterialToggleComponent",
+      "MaterialTooltipDirective",
+      "MaterialTooltipSourceDirective",
+      "MaterialTooltipTargetDirective",
       "MaterialYesNoButtonsComponent",
-      "MaterialMultilineInputComponent",
       "ModalComponent",
       "NgModel",
       "PopupSourceDirective",
@@ -361,8 +434,7 @@
       "ScorecardComponent"
     ],
     "materialProviders": [
-      "popupBindings",
-      "rippleBindings"
+      "popupBindings"
     ]
   }
 }

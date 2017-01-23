@@ -62,7 +62,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<img src=\"packages/gwt_mail_sample/nav/top/logo.png\" class=\"logo\"/>\n\n<div class=\"statusDiv\">\n  <div>\n    <b>Welcome back, foo@example.com</b>\n  </div>\n\n  <div class=\"linksDiv\">\n    <a href=\"\" (click)=\"signOut($event)\">Sign Out</a>\n    <a href=\"\" (click)=\"showAbout($event)\">About</a>\n  </div>\n</div>\n\n<about-dialog></about-dialog>\n",
+        "template": "<div class=\"wrapper\">\n  <div class=\"app\">\n    <img src=\"packages/gwt_mail_sample/nav/top/dart-logo-60.png\" class=\"logo\"/>\n    <h1>AngularDart Mail Sample App</h1>\n  </div>\n\n  <div class=\"statusDiv\">\n    <div>\n      <b>Welcome back, foo@example.com</b>\n    </div>\n\n    <div class=\"linksDiv\">\n      <a href=\"\" (click)=\"signOut($event)\">Sign Out</a>\n      <a href=\"\" (click)=\"showAbout($event)\">About</a>\n      <a href=\"https://github.com/isoos/gwt_mail_sample\">GitHub</a>\n    </div>\n  </div>\n\n  <about-dialog></about-dialog>\n</div>\n",
         "templateUrl": "asset:gwt_mail_sample/lib/nav/top/top_panel.html",
         "styles": [],
         "styleUrls": [
