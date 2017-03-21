@@ -1,0 +1,20 @@
+{
+  "ngDeps": null,
+  "type": {
+    "CatCafe": {
+      "class": "Identifier",
+      "name": "CatCafe",
+      "moduleUrl": "asset:testing_example/lib/cat.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Cat": {
+      "class": "Identifier",
+      "name": "Cat",
+      "moduleUrl": "asset:testing_example/lib/cat.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
